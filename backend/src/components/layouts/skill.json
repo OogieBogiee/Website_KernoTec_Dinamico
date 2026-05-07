@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_layouts_skills",
+  "info": {
+    "displayName": "skill",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "skill_title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "skill_description": {
+      "type": "string",
+      "required": true
+    },
+    "skill_icon": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "skill_card_description": {
+      "type": "text",
+      "required": true
+    },
+    "skill_background": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "technology": {
+      "type": "component",
+      "component": "layouts.technology",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "names",
+  "info": {
+    "singularName": "name",
+    "pluralName": "names",
+    "displayName": "Staff"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "image_color_front": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image_color_top": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image_working": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "saying": {
+      "type": "string",
+      "required": true
+    },
+    "position_staff": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

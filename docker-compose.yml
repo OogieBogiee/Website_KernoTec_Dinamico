@@ -1,0 +1,77 @@
+services:
+  # PostgreSQL Database 
+  postgres:
+    image: postgres:15-alpine
+    container_name: kernotec_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - internal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Strapi CMS
+  strapi:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: kernotec_strapi
+    restart: unless-stopped
+    ports:
+      - "1337:1337"
+    environment:
+      NODE_ENV: production
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_NAME: ${DB_NAME}
+      DATABASE_USERNAME: ${DB_USER}
+      DATABASE_PASSWORD: ${DB_PASSWORD}
+      DATABASE_SSL: false
+      JWT_SECRET: ${JWT_SECRET}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      API_TOKEN_SALT: ${API_TOKEN_SALT}
+      APP_KEYS: ${APP_KEYS}
+      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+    volumes:
+      - strapi_uploads:/srv/app/public/uploads
+    networks:
+      - internal
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Frontend 
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: kernotec_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
+  strapi_uploads:
+    driver: local

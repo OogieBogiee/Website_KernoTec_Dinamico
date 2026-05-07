@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_acordeon_social_networks",
+  "info": {
+    "displayName": "social network",
+    "icon": "thumbUp"
+  },
+  "options": {},
+  "attributes": {
+    "social_network_name": {
+      "type": "string"
+    },
+    "social_network_url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

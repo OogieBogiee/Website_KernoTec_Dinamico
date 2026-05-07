@@ -1,0 +1,38 @@
+# ============================================
+# KernoTec CMS - Docker Ignore
+# ============================================
+
+# Dependencias
+node_modules/
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# Desarrollo
+.tmp/
+.env
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Tests
+coverage/
+.nyc_output/
+
+# Documentación (no necesaria en imagen)
+*.md
+LICENSE

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stakeholders",
+  "info": {
+    "singularName": "stakeholder",
+    "pluralName": "stakeholders",
+    "displayName": "Stakeholder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_stakeholder": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon_stakeholder": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url_stakeholder": {
+      "type": "string",
+      "unique": true
+    },
+    "type_stakeholder": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Cliente",
+        "Partner"
+      ]
+    }
+  }
+}

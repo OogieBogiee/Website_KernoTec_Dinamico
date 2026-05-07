@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>KernoTec</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fotos/isotipo-kernotec.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fotos/isotipo-kernotec.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fotos/isotipo-kernotec.ico">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Somos una empresa orientada a la optimización de todas las actividades y requerimientos de cualquier empresa en el rubro tecnológico en las áreas de Desarrollo de Software, Telecomunicaciones , seguridad electrónica y soporte técnico.">
+    <meta name="keywords" content="Kernotec, Desarrollo Web, Telecomunicaciones, Soporte Técnico, Innovación Tecnológica, Software a medida">
+    <meta name="author" content="KERNOTEC">
+    <link href="/css/style.css?v=1.2.1" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+    integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+    integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
+    <script defer src="/vendor/purify.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('captcha', {
+            'sitekey' : '6LfkQ4gsAAAAANmqnHeb6e1-qFA1Gw3Q7-gk_HE2'
+          });
+        };
+    </script>
+</head>
+
+
+<body>
+    <nav class="topnav" id="myTopnav" aria-label="Navegación principal">
+        <div class="navLeft">
+            <div class="divLogo">
+                <a href="#tinicio" aria-label="Ir al inicio">
+                    <img loading="lazy" src="img/logoCompleto.png" alt="Logo KernoTec" />
+                </a>
+            </div>
+        </div>
+        <div class="navLinks" role="menubar">
+            <noscript>
+                <a href="#tinicio" role="menuitem">Inicio</a>
+                <a href="#tcon" role="menuitem">Contactos</a>
+            </noscript>
+        </div>
+    </nav>
+    <input type="checkbox" id="ham-menu" aria-hidden="true" tabindex="-1">
+    <label for="ham-menu" class="ham-menu-label" aria-label="Abrir menú móvil">
+        <div class="hide-des">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </div>
+    </label>
+    <div class="full-page-overlay" aria-hidden="true"></div>
+    <nav class="ham-menu" aria-label="Menú móvil">
+        <div class="ham-menu-header">
+            <img loading="lazy" src="img/logoCompleto.png" alt="KernoTec" />
+        </div>
+        <ul class="centre-text bold-text" role="menu">
+            <noscript>
+                <li role="none"><a href="#tinicio" role="menuitem">Inicio</a></li>
+                <li role="none"><a href="#tcon" role="menuitem">Contactos</a></li>
+            </noscript>
+        </ul>
+    </nav>
+
+
+    <div class="container1" id="tinicio"> 
+          <img loading="lazy" src="" class="carousel-images active" alt="" />
+          <div class="banner"> 
+            <div class="containerBanner">
+                <div class="containerImages">
+                    <div class="imagesBorder">
+                        <svg width="512" height="512">
+                            <circle cx="256" cy="256" r="256" fill="#fff" />
+                        </svg>
+                    </div>
+                    <video class="image i1 iShowA" width="512" height="512" preload="auto" autoplay muted loop>
+                        <source src="" type="video/mp4">
+                    </video>
+                    <video class="image2 i1 iShowB" width="512" height="512" preload="auto" autoplay muted loop>
+                        <source src="" type="video/mp4">
+                    </video>
+                    <div class="imagesBorder">
+                        <img loading="lazy" src="img/svg/video-mask-2.png" class="test3" alt="">
+                    </div>
+                </div>
+                <div class="containerCircle">
+                </div>
+            </div>
+        </div>
+        <span class="btnNext2"> <img loading="lazy" src="img/buttonnext.png" width="70px" alt="Siguiente" /> </span> 
+        <div class="screen1-text-container textA tShow">
+            <h1 class="screen1-titulo"></h1>
+            <span class="screen1-parrafo"></span>
+        </div>
+    </div>
+
+
+<div class="container2a" id="tnosotros">
+        <div class="containerInside">
+                   <div class="parte1">
+                        <div class="contenido">
+                        </div>
+                    </div>                    
+                    <div class="parte2">
+                        <!-- grill -->
+                        <div class="pictures" style="display: none;">
+                            <div class="grid-pictures">
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <div id="services-dynamic-container">
+    </div>
+    <div class="container" id="cust">
+        <div class="customer-section">
+            <h2 class="customer-title">Nuestros Clientes</h2>
+            <div id="glide" class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides"></ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="customer-section">
+            <h2 class="customer-title">Nuestros Partners</h2>
+            <div id="glide2" class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides"></ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container7 " id="tcon">
+        <div class="containerInside">
+            <div class="parte0">
+                <span class="title1">CONTÁCTANOS</span>
+                <span class="title2">Envía un correo electrónico para contactarnos</span>
+            </div>
+            <div class="container">
+                <div class="footer-top">
+
+            <div class="parte1">
+                <div class="containercontac">
+                    <form id="contact_form">
+                        <div class="form-group" >
+                            <div class="group"> 
+                                <input type="text" id="nombre" name="nombre" required>
+                                <span class="bar"></span>
+                                <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="group">
+                            <input type="email" id="correo" name="correo" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label for="correo">Correo electrónico</label>
+                        </div>
+                    </div>
+                     <div  class="form-group">
+                            <div class="group">
+                                <input type="tel" id="phone"  name="tel" required oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+                                <span class="bar"></span>
+                                <label for="phone">Teléfono de Contacto</label>
+                            </div>
+                            <div class="group">
+                                <div class="custom-select" id="interes-select">
+                                    <button type="button" class="custom-select-trigger" id="interes-trigger" aria-haspopup="listbox" aria-expanded="false">
+                                        <span class="custom-select-value"></span>
+                                    </button>
+                                    <div class="custom-select-menu" id="interes-menu" role="listbox" aria-labelledby="interes-trigger" tabindex="-1"></div>
+                                </div>
+                                <input type="hidden" id="interes" name="interes" />
+                                <span class="bar1"></span>
+                                <label for="interes">Área de interés</label>
+                            </div>
+                        </div>    
+                        <div class="group textarea">
+                            <textarea class="group" type="text" rows="5" id="mensaje" name="mensaje" required ></textarea>
+                            <span class="bar2"></span> 
+                            <label>¿Cómo podemos ayudarte?</label>                          
+                        </div>
+                        <div class="button-captcha">
+                            <div class="butonOrange-footer">
+                                <button id="success" type="submit"  class="botonOrange1"> Hablemos</button>
+                            </div>
+                            <div class="captcha" id="captcha"></div> 
+                        </div>                    
+                    </form>
+                </div>
+            </div>
+
+            <div class="parte2">
+                <div class="parte4">
+                    <div class="map-responsive">
+                        <iframe id="identity-location-iframe" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src=""></iframe>
+                    </div>
+                </div>
+                
+                <div class="parte3">
+                    <div class="contact-details">
+                        <div class="contactDetail">
+                            <span class="contactDetail-boxicon">
+                                <i class="fa-solid fa-envelope contactDetail-icon"></i>
+                            </span>
+                            <div class="contactDetail-right">
+                                <h4 class="contactDetail-title">Correo</h4>
+                                <span class="contactDetail-description" id="identity-correo"></span>
+                            </div>
+                        </div>
+                        <div class="contactDetail">
+                            <a href="#" target="_blank" class="contactDetail-boxicon" id="identity-location-link">
+                                <span class="fa-solid fa-location-dot contactDetail-icon"></span>
+                            </a>
+                            <div class="contactDetail-right">
+                                <h4 class="contactDetail-title">Visítanos</h4>
+                                <span class="contactDetail-description" id="identity-location-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+ 
+    <div class="container8 ">
+        <div class="containerInside">
+            <div class="parte1">
+                <img loading="lazy" src="img/logo3.png"  alt="Logo KernoTec Blanco" />
+            </div>
+            <div class="parte2">
+                <div class="social-buttons" id="identity-social-buttons"></div>
+            </div>
+            <div class="parte3">
+                <span id="footer-copyright"></span>
+            </div>
+        </div>
+    </div>
+    <div id="slide-arriba">
+        <a href='#' class='scroll-top'>
+            <svg height='35' viewBox='0 0 24 24' width='35' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z' />
+                <path d='M0 0h24v24H0z' fill='none' />
+            </svg>
+        </a>
+    </div>
+</body>
+<script type="module" src="js/accord-dynamic.js"></script>
+<script type="module" src="js/banner.js"></script>
+<script type="module" src="js/footer.js"></script>
+<script type="module" src="js/nav.js"></script>
+<script type="module" src="js/services.js"></script>
+<script type="module" src="js/staff.js"></script>
+<script type="module" src="js/stakeholders.js"></script>
+<script src="js/init.js"></script>
+<script src="js/mensaje.js"></script>
+<script defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+      integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+</script>    
+<script defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.js"
+      integrity="sha512-vZGsugWaSqQZuW8N5Z3ild7Tk8NqiZjKffeIQGpnnIs6g7HVZaFZjlLKPIw1qDsrQ5KAxAGfBinglQWu6i/8DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+</script>
+<script>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('a.scroll-top').stop(true, true).fadeIn('slow');
+        } else {
+            $('a.scroll-top').stop(true, true).fadeOut('slow');
+        }
+    });
+    $('a.scroll-top').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 80);
+    });
+</script>
+</html>
+<style>
+    .map-responsive {
+      position: relative;
+      width: 100%;
+      padding-bottom: 70%; 
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+  
+    .map-responsive iframe {
+      position: absolute;
+      top: -55px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 55px);
+      border: 0;
+    }
+  </style>
+
+
+
+
+
+

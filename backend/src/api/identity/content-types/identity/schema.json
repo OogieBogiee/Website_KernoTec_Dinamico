@@ -1,0 +1,80 @@
+{
+  "kind": "singleType",
+  "collectionName": "identities",
+  "info": {
+    "singularName": "identity",
+    "pluralName": "identities",
+    "displayName": "Identity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_identity": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description_identity": {
+      "type": "text",
+      "required": true
+    },
+    "image_background_identity": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "video_identity": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "videos"
+      ]
+    },
+    "title_us": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "descriptions_us": {
+      "type": "text",
+      "required": true,
+      "unique": false
+    },
+    "correo": {
+      "type": "string"
+    },
+    "location_text": {
+      "type": "string"
+    },
+    "image_background_accordion": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "location_url": {
+      "type": "text"
+    },
+    "accordion": {
+      "type": "component",
+      "component": "acordeon.accordion",
+      "repeatable": true
+    },
+    "social": {
+      "type": "component",
+      "component": "acordeon.social-network",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_acordeon_accordions",
+  "info": {
+    "displayName": "accordion"
+  },
+  "options": {},
+  "attributes": {
+    "title_accordion": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description_accordion": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "media_accordion": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "videos",
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

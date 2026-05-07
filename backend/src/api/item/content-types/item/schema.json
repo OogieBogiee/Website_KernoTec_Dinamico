@@ -1,0 +1,136 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "Item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_item": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description_short": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "!=": [
+            {
+              "var": "visibility_slider"
+            },
+            false
+          ]
+        }
+      },
+      "required": true
+    },
+    "description_long": {
+      "type": "text",
+      "required": true,
+      "unique": false
+    },
+    "image_background": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "video_slider": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "!=": [
+            {
+              "var": "visibility_slider"
+            },
+            false
+          ]
+        }
+      },
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "position_area": {
+      "type": "customField",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "Área"
+          ]
+        }
+      },
+      "customField": "global::unique-position",
+      "description": "Déjalo vacío para asignarlo automáticamente",
+      "unique": true,
+      "min": 1,
+      "max": 10
+    },
+    "position_servicio": {
+      "type": "customField",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "Servicio"
+          ]
+        }
+      },
+      "customField": "global::unique-position",
+      "description": "Déjalo vacío para asignarlo automáticamente",
+      "unique": true,
+      "min": 1,
+      "max": 5
+    },
+    "type": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Área",
+        "Servicio"
+      ]
+    },
+    "visibility_slider": {
+      "type": "boolean",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "visibility"
+            },
+            true
+          ]
+        }
+      },
+      "required": true,
+      "default": true
+    },
+    "visibility": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "skill": {
+      "type": "component",
+      "component": "layouts.skill",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    }
+  }
+}

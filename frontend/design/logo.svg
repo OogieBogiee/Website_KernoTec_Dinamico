@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg12035"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="favicon-16x16.png"
+   inkscape:export-xdpi="5.5962257"
+   inkscape:export-ydpi="5.5962257"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12037"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="1.6819304"
+     inkscape:cx="502.10163"
+     inkscape:cy="342.46363"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="144.72457,208.12024"
+       orientation="0,-1"
+       id="guide12212"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="122.70127,185.78231"
+       orientation="1,0"
+       id="guide12214"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs12032" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.41724;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path17271"
+       cx="122.94113"
+       cy="88.067497"
+       r="33.592819"
+       inkscape:export-filename="apple-touch-icon.png"
+       inkscape:export-xdpi="89.539612"
+       inkscape:export-ydpi="89.539612" />
+    <path
+       id="path12208"
+       style="fill:none;stroke:#71a6aa;stroke-width:13.22916667;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke;stroke-linecap:round"
+       d="M 153.52345,74.87915 C 148.15479,62.646004 136.0604,54.744957 122.70104,54.743429 109.35012,54.75418 97.267152,62.653726 91.901884,74.87915 m 0.744657,28.63029 c 5.706394,11.36895 17.333819,18.55045 30.054499,18.5627 12.72087,-0.0121 24.34853,-7.19359 30.05501,-18.5627"
+       sodipodi:nodetypes="cccccc" />
+    <circle
+       style="fill:#ffffff;stroke:#e26f35;stroke-width:10.58333333;stroke-linejoin:bevel;paint-order:fill markers stroke;stroke-dasharray:none"
+       id="path12210"
+       cx="122.56538"
+       cy="88.801109"
+       r="14.865731" />
+    <ellipse
+       style="fill:#ffffff;stroke:#71a6aa;stroke-width:7.71083;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path12208-9-4-0"
+       cx="106.66193"
+       cy="57.908054"
+       rx="8.275589"
+       ry="8.0296135" />
+    <ellipse
+       style="fill:#ffffff;stroke:#71a6aa;stroke-width:7.71083;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path12208-9-4-0-3"
+       cx="138.90413"
+       cy="118.45392"
+       rx="8.275589"
+       ry="8.0296135" />
+  </g>
+</svg>
